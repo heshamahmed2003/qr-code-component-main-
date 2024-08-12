@@ -1,0 +1,60 @@
+:root {
+    --card-bg-color: #f5f5f5;
+    --card-radius: 10px;
+    --qr-size: 150px;
+    --card-padding: 20px;
+    --text-color: #333;
+    --text-font: 'Arial', sans-serif;
+    --bg-color: #dbe9ff;
+    --container-padding: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: var(--container-padding);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-radius);
+    text-align: center;
+    padding: var(--card-padding);
+    width: 300px;
+}
+
+.qr-code {
+    width: var(--qr-size);
+    height: var(--qr-size);
+    border-radius: var(--card-radius);
+    margin-bottom: var(--card-padding);
+}
+
+h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-top: 0;
+}
